@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.lginSection {
+    width: 100%;
+    background-image: url(img/bg.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.lginSection .container {
+    width: 1140px;
+    margin: auto;
+}
+
+.lginSection .main_nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.lginSection .main_nav .logo {
+    width: 150px;
+}
+
+.lginSection .main_nav .logo img {
+    width: 100%;
+    display: block;
+}
+
+.lginSection .main_nav .hamburger {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.lginSection .main_nav .hamburger i {}
+
+.lginSection .form_wrapper {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.lginSection .form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    border-radius: 5px;
+}
+
+.lginSection .form span#sign_in {
+    color: #e74c3c;
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e74c3c;
+    font-size: 20px;
+
+}
+
+.lginSection .form .input_field {
+    margin-top: 60px;
+}
+
+.lginSection .form .input_area {
+    background: #fff;
+    margin: 20px 0px;
+    padding: 7px 0px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #ffff;
+    border-radius: 4px;
+
+}
+
+.lginSection .form .input_area i {
+    width: 25px;
+    text-align: center;
+    color: #616161;
+}
+
+.lginSection .form .input_area input {
+    width: 275px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 10px;
+    font-size: 16px;
+
+}
+
+.lginSection .form .input_area input::placeholder {
+    font-size: 14px;
+}
+
+.lginSection .form .input_area:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.lginSection .form .chk_box {
+    width: 100%;
+    height: 20px;
+    display: inline;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.lginSection .form input#remember {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+}
+
+/*
+.lginSection .form input:checked{
+    background-color: red;
+    color: red;
+}
+*/
+.lginSection .form .chk_box a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.lginSection .form label {
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 120px;
+    font-size: 14px;
+}
+
+.lginSection .form .divider {
+    margin-top: 10px;
+}
+
+.lginSection .form .divider span {
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+
+}
+
+.lginSection .form .divider span:before {
+    content: '';
+    display: block;
+    width: 45%;
+    height: 1px;
+    background-color: #ababab;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.lginSection .form .divider span:after {
+    content: '';
+    display: block;
+    width: 45%;
+    height: 1px;
+    background-color: #ababab;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.lginSection .form .social_area {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.lginSection .form .social_area p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lginSection .form .social_area .icon i {
+    width: 45px;
+    height: 45px;
+    margin: 0px 3px;
+    line-height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lginSection .form .social_area .icon {}
+
+.lginSection .form .social_area .icon i:nth-child(1) {
+    background-color: #dd4b39;
+}
+
+.lginSection .form .social_area .icon i:nth-child(2) {
+    background-color: #3b5998;
+}
+
+.lginSection .form .social_area .icon i:nth-child(3) {
+    background-color: #55acee;
+}
+
+.lginSection .form button {
+    width: 100%;
+    background: #e74c3c;
+    border: 1px solid #e74c3c;
+    outline: none;
+    padding: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.lginSection .form button:hover {
+    background-color: #dc2b19;
+}
+
+/*close button=================*/
+
+
+.lginSection .form .form_close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background: #e74c3c;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/*media start from here*/
